@@ -11,11 +11,26 @@ public class Client {
 	}
 	
 	//retourne le solde général du client (tous comptes pris en compte)
-	public double soldeClient(Client unClient){
+	public double soldeClient(){
+		int i = 0, soldeTotal;
+		Compte compte;
 		
-		return (2);
+		while(i<lesComptes.size()){
+			compte = lesComptes.get(i);	
+			soldeTotal = (soldeTotal + compte.getSolde());
+		}
+		i++;
+		
+		return (soldeTotal);
 	}
 	
+		public ArrayList<Client> compteADecouvert(){
+		
+	}
+	
+	public void ajouterCompte(Compte unCompte){
+		
+	}
 	public String getNom() {
 		return nom;
 	}
@@ -41,13 +56,7 @@ public class Client {
 	}
 
 	//retourne un ensemble de clients qui ont au moins un compte dans le rouge
-	public ArrayList<Client> compteADecouvert(){
-		
-	}
-	
-	public void ajouterCompte(Compte unCompte){
-		
-	}
+
 	
 	
 }
