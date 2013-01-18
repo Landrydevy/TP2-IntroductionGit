@@ -10,6 +10,12 @@ public class Client {
 		this.prenom = unPrenom;
 	}
 	
+	public Client(){
+		
+	}
+	
+	
+
 	//retourne le solde général du client (tous comptes pris en compte)
 	public double soldeClient(){
 		int i = 0, soldeTotal;
@@ -31,6 +37,13 @@ public class Client {
 	public void ajouterCompte(Compte unCompte){
 		
 	}
+	
+	@Override
+	public String toString() {
+		return "Client [nom=" + nom + ", prenom=" + prenom + ", lesComptes="
+				+ lesComptes + "]";
+	}
+	
 	public String getNom() {
 		return nom;
 	}
